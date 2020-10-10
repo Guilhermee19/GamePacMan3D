@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField][Range(0.0f, 0.5f)] float moveSmoothTime = 0.3f;
     [SerializeField][Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
 
-    [SerializeField] bool lockCursor = true;
+    [SerializeField] bool lockCursor = false;
 
     float cameraPitch = 0.0f;
     float velocityY = 0.0f;
@@ -26,10 +26,10 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         controller = GetComponent<CharacterController>();
-        if(lockCursor)
+        if(!lockCursor)
         {
             Cursor.lockState = CursorLockMode.Locked;
-            Cursor.visible = false;
+            Cursor.visible = true;
         }
     }
 

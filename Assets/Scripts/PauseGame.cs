@@ -5,6 +5,8 @@ using UnityEngine;
 public class PauseGame : MonoBehaviour
 {
     public GameObject textPause;
+    public GameObject boxPoints;
+    public GameObject miniMap;
     float cameraPitch = 0.0f;
 
     void Update()
@@ -12,12 +14,15 @@ public class PauseGame : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Escape)){
             if(Time.timeScale == 1){
                 textPause.SetActive(true);
-                
+                boxPoints.SetActive(false);
+                miniMap.SetActive(false);
                 Time.timeScale = 0;
             }
             else{
                 textPause.SetActive(false);
-                //Cursor.lockState = CursorLockMode.Locked;
+                boxPoints.SetActive(true);
+                miniMap.SetActive(true);
+                Cursor.lockState = CursorLockMode.Locked;
                 Time.timeScale = 1;
             }
         }

@@ -6,6 +6,7 @@ ScriptsOnlyBuild:
     - PauseGame
     - PlayerController
     - collectItems
+    - killPlayer
     Unity.TextMeshPro.dll:
     - TMPro.TMP_FontAsset
     - TMPro.TMP_Settings
@@ -57,33 +58,35 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9704}
+      Script: {instanceID: 9708}
     - Class: 114
-      Script: {instanceID: 9860}
+      Script: {instanceID: 9864}
     - Class: 114
-      Script: {instanceID: 9902}
+      Script: {instanceID: 9906}
     - Class: 114
-      Script: {instanceID: 10280}
+      Script: {instanceID: 10284}
     - Class: 114
-      Script: {instanceID: 10660}
+      Script: {instanceID: 10664}
     - Class: 114
-      Script: {instanceID: 10832}
+      Script: {instanceID: 10836}
     - Class: 114
-      Script: {instanceID: 10872}
+      Script: {instanceID: 10876}
     - Class: 114
-      Script: {instanceID: 10878}
+      Script: {instanceID: 10882}
     - Class: 114
-      Script: {instanceID: 11064}
+      Script: {instanceID: 11048}
     - Class: 114
-      Script: {instanceID: 11124}
+      Script: {instanceID: 11070}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 11130}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11242}
     - Class: 114
-      Script: {instanceID: 11438}
+      Script: {instanceID: 11374}
     - Class: 114
-      Script: {instanceID: 11490}
+      Script: {instanceID: 11444}
+    - Class: 114
+      Script: {instanceID: 11496}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -140,31 +143,31 @@ ScriptsOnlyBuild:
     - Class: 109
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9704}
+      Script: {instanceID: 9708}
     - Class: 114
-      Script: {instanceID: 9902}
+      Script: {instanceID: 9906}
     - Class: 114
-      Script: {instanceID: 10216}
+      Script: {instanceID: 10220}
     - Class: 114
-      Script: {instanceID: 10280}
+      Script: {instanceID: 10284}
     - Class: 114
-      Script: {instanceID: 10306}
+      Script: {instanceID: 10310}
     - Class: 114
-      Script: {instanceID: 10660}
+      Script: {instanceID: 10664}
     - Class: 114
-      Script: {instanceID: 10878}
+      Script: {instanceID: 10882}
     - Class: 114
-      Script: {instanceID: 10892}
+      Script: {instanceID: 10896}
     - Class: 114
-      Script: {instanceID: 11064}
+      Script: {instanceID: 11070}
     - Class: 114
-      Script: {instanceID: 11124}
+      Script: {instanceID: 11130}
     - Class: 114
-      Script: {instanceID: 11236}
+      Script: {instanceID: 11242}
     - Class: 114
-      Script: {instanceID: 11282}
+      Script: {instanceID: 11288}
     - Class: 114
-      Script: {instanceID: 11490}
+      Script: {instanceID: 11496}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -696,6 +699,12 @@ ScriptsOnlyBuild:
     className: SimpleActivatorMenu
   - hash:
       serializedVersion: 2
+      Hash: 773fff14dbc3724a6c6a5c626acb74c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: killPlayer
+  - hash:
+      serializedVersion: 2
       Hash: 3b760e6526e13f7504f59e210145899a
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
@@ -774,7 +783,7 @@ ScriptsOnlyBuild:
     className: WaterTile
   - hash:
       serializedVersion: 2
-      Hash: 6851f09550c06c4d2c703d0739e6c803
+      Hash: 6168de6943d04987aa97e61fb7598e3c
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseGame
@@ -890,4 +899,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/Gui/Desktop/Nova pasta/GamePacMan3D/GAME#02.exe
+  playerPath: C:/Users/Gui/Desktop/Nova pasta/Nova pasta/GAME#02.exe

@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - collectable_items
+  - ponto
+  - ghost
   layers:
   - Default
   - TransparentFX
