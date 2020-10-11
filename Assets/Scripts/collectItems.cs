@@ -26,6 +26,9 @@ public class collectItems : MonoBehaviour
             other.gameObject.SetActive(false);
             points = points + 1;
         }
+        if( points == 328){
+            // Excelent ! Finish Game
+        }
         
     }
 }

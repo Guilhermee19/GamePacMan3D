@@ -8,12 +8,13 @@ public class killPlayer : MonoBehaviour
 {
     public Text num_heart;
     private int heart;
-    public string nameScene;
+    public string menuScene;
+    public string resetGame;
 
     // Start is called before the first frame update
     void Start()
     {
-        heart = 1;
+        heart = 3;
     }
 
     // Update is called once per frame
@@ -26,9 +27,10 @@ public class killPlayer : MonoBehaviour
     {
         if( other.tag == "ghost"){
             heart = heart - 1;
+            SceneManager.LoadScene(resetGame);
             
             if(heart == 0){
-                SceneManager.LoadScene(nameScene);
+                SceneManager.LoadScene(menuScene);
             }
             
         }

@@ -22,7 +22,6 @@ public class PauseGame : MonoBehaviour
                 textPause.SetActive(false);
                 boxPoints.SetActive(true);
                 miniMap.SetActive(true);
-                Cursor.lockState = CursorLockMode.Locked;
                 Time.timeScale = 1;
             }
         }

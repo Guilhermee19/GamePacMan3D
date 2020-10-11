@@ -15,7 +15,6 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -23,6 +22,8 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.CanvasScaler
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.RawImage
     - UnityEngine.UI.Shadow
     - UnityEngine.UI.Text
   sceneClasses:
@@ -51,6 +52,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
     - Class: 89
       Script: {instanceID: 0}
     - Class: 104
@@ -64,9 +67,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 9906}
     - Class: 114
+      Script: {instanceID: 10198}
+    - Class: 114
       Script: {instanceID: 10284}
     - Class: 114
       Script: {instanceID: 10664}
+    - Class: 114
+      Script: {instanceID: 10684}
     - Class: 114
       Script: {instanceID: 10836}
     - Class: 114
@@ -92,6 +99,8 @@ ScriptsOnlyBuild:
     - Class: 128
       Script: {instanceID: 0}
     - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
       Script: {instanceID: 0}
     - Class: 143
       Script: {instanceID: 0}
@@ -128,11 +137,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
     - Class: 49
+      Script: {instanceID: 0}
+    - Class: 65
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
@@ -783,7 +800,7 @@ ScriptsOnlyBuild:
     className: WaterTile
   - hash:
       serializedVersion: 2
-      Hash: 6168de6943d04987aa97e61fb7598e3c
+      Hash: c3c9ec689375fbd09688d81810513c23
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PauseGame
@@ -899,4 +916,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Level1.unity
-  playerPath: C:/Users/Gui/Desktop/Nova pasta/Nova pasta/GAME#02.exe
+  playerPath: C:/Users/Gui/Desktop/Nova pasta/ExecutavelPacMan/GAME#02.exe
