@@ -7,7 +7,7 @@ public class ChangeScene : MonoBehaviour
 {
     public string nameScene;
     
-    public void ChangeStart(){
+    public void SelectScene(){
         SceneManager.LoadScene(nameScene);
     }
 

@@ -8,26 +8,21 @@ public class collectItems : MonoBehaviour
     public Text punctuation;
     private int points;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    void Start(){
         points = 0;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
+    void Update(){
         punctuation.text = "Pontos: "+ points;
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
+    private void OnTriggerEnter(Collider other){
         if( other.tag == "collectable_items"){
             other.gameObject.SetActive(false);
             points = points + 1;
         }
         if( points == 328){
-            // Excelent ! Finish Game
+            Debug.Log("Excelente !");
         }
         
     }

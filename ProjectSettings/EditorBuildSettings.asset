@@ -9,6 +9,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Menu.unity
     guid: 083ab4bb425582846b8f86323f865dd2
   - enabled: 1
-    path: Assets/Scenes/Level1.unity
+    path: Assets/Scenes/Options.unity
+    guid: db796bcf2e6afed4195b6da64adbe338
+  - enabled: 1
+    path: Assets/Scenes/MenuDifficulty.unity
+    guid: 63f0c91dbd5f0074e8f6abf7c55089a5
+  - enabled: 1
+    path: Assets/Scenes/isGame#1.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/isGame#2.unity
+    guid: e080f03904738f840adbc97d3296bfe8
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 4148a397d77f3bf4bbd791d62ad3b863
   m_configObjects: {}

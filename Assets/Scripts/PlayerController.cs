@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        Cursor.visible = false;
+        
         controller = GetComponent<CharacterController>();
         if(!lockCursor)
         {
