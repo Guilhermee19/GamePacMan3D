@@ -76,9 +76,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11246}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11504}
     - Class: 114
-      Script: {instanceID: 28184}
+      Script: {instanceID: 16480}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -151,7 +151,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11292}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11504}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -220,7 +220,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11246}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11504}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -295,13 +295,13 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11330}
     - Class: 114
-      Script: {instanceID: 11490}
+      Script: {instanceID: 11492}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11504}
     - Class: 114
-      Script: {instanceID: 11516}
+      Script: {instanceID: 11518}
     - Class: 114
-      Script: {instanceID: 11534}
+      Script: {instanceID: 11536}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -388,11 +388,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11450}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11476}
     - Class: 114
-      Script: {instanceID: 138742}
+      Script: {instanceID: 11504}
     - Class: 114
-      Script: {instanceID: 177078}
+      Script: {instanceID: 28748}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -495,7 +495,9 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11450}
     - Class: 114
-      Script: {instanceID: 11502}
+      Script: {instanceID: 11476}
+    - Class: 114
+      Script: {instanceID: 11504}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1205,6 +1207,12 @@ ScriptsOnlyBuild:
     className: TMP_SubMesh
   - hash:
       serializedVersion: 2
+      Hash: 632cee63af197ba9c574eacb86ca6348
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Teleforter
+  - hash:
+      serializedVersion: 2
       Hash: 20eeaeae829475b5e354d1f626c51a2b
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools.TestRunner
@@ -1257,12 +1265,6 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
-  - hash:
-      serializedVersion: 2
-      Hash: 632cee63af197ba9c574eacb86ca6348
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: Teleforter
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
