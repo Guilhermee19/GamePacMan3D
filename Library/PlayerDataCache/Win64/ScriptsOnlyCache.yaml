@@ -2,11 +2,12 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - ChangeScene
-    - GameOver
     - Patrol
     - PauseGame
     - PlayerController
+    - RespawnPlayer
     - SettingsMenu
+    - Teleforter
     - collectItems
     - killPlayer
     Unity.TextMeshPro.dll:
@@ -17,6 +18,7 @@ ScriptsOnlyBuild:
     - TMPro.TextMeshProUGUI
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -64,8 +66,6 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10286}
     - Class: 114
-      Script: {instanceID: 10472}
-    - Class: 114
       Script: {instanceID: 10668}
     - Class: 114
       Script: {instanceID: 10886}
@@ -77,6 +77,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11246}
     - Class: 114
       Script: {instanceID: 11502}
+    - Class: 114
+      Script: {instanceID: 28184}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -133,7 +135,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10286}
     - Class: 114
-      Script: {instanceID: 10312}
+      Script: {instanceID: 10314}
     - Class: 114
       Script: {instanceID: 10668}
     - Class: 114
@@ -148,6 +150,75 @@ ScriptsOnlyBuild:
       Script: {instanceID: 11246}
     - Class: 114
       Script: {instanceID: 11292}
+    - Class: 114
+      Script: {instanceID: 11502}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    Assets/Scenes/MenuDifficulty.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9710}
+    - Class: 114
+      Script: {instanceID: 9908}
+    - Class: 114
+      Script: {instanceID: 10222}
+    - Class: 114
+      Script: {instanceID: 10286}
+    - Class: 114
+      Script: {instanceID: 10668}
+    - Class: 114
+      Script: {instanceID: 10886}
+    - Class: 114
+      Script: {instanceID: 11074}
+    - Class: 114
+      Script: {instanceID: 11134}
+    - Class: 114
+      Script: {instanceID: 11246}
     - Class: 114
       Script: {instanceID: 11502}
     - Class: 115
@@ -210,7 +281,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 10286}
     - Class: 114
-      Script: {instanceID: 10468}
+      Script: {instanceID: 10470}
     - Class: 114
       Script: {instanceID: 10668}
     - Class: 114
@@ -251,7 +322,7 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 245
       Script: {instanceID: 0}
-    Assets/Scenes/isGame.unity:
+    Assets/Scenes/isGame#1.unity:
     - Class: 1
       Script: {instanceID: 0}
     - Class: 4
@@ -294,6 +365,113 @@ ScriptsOnlyBuild:
       Script: {instanceID: 10222}
     - Class: 114
       Script: {instanceID: 10286}
+    - Class: 114
+      Script: {instanceID: 10668}
+    - Class: 114
+      Script: {instanceID: 10688}
+    - Class: 114
+      Script: {instanceID: 10840}
+    - Class: 114
+      Script: {instanceID: 10880}
+    - Class: 114
+      Script: {instanceID: 10886}
+    - Class: 114
+      Script: {instanceID: 11052}
+    - Class: 114
+      Script: {instanceID: 11074}
+    - Class: 114
+      Script: {instanceID: 11134}
+    - Class: 114
+      Script: {instanceID: 11246}
+    - Class: 114
+      Script: {instanceID: 11380}
+    - Class: 114
+      Script: {instanceID: 11450}
+    - Class: 114
+      Script: {instanceID: 11502}
+    - Class: 114
+      Script: {instanceID: 138742}
+    - Class: 114
+      Script: {instanceID: 177078}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
+    - Class: 154
+      Script: {instanceID: 0}
+    - Class: 156
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 195
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 218
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 238
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    Assets/Scenes/isGame#2.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 84
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9710}
+    - Class: 114
+      Script: {instanceID: 9866}
+    - Class: 114
+      Script: {instanceID: 9908}
+    - Class: 114
+      Script: {instanceID: 10200}
+    - Class: 114
+      Script: {instanceID: 10222}
+    - Class: 114
+      Script: {instanceID: 10286}
+    - Class: 114
+      Script: {instanceID: 10308}
     - Class: 114
       Script: {instanceID: 10668}
     - Class: 114
@@ -583,6 +761,12 @@ ScriptsOnlyBuild:
     className: ControlPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: aae72383fe71e3073e526daabac25abc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RespawnPlayer
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
@@ -653,12 +837,6 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: ScrollRect
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameOver
   - hash:
       serializedVersion: 2
       Hash: c88c4199b288356ec3eb2f0d85abc619
@@ -1079,10 +1257,18 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp-firstpass.dll
     namespaceName: UnityStandardAssets.Utility
     className: AutoMobileShaderSwitch
+  - hash:
+      serializedVersion: 2
+      Hash: 632cee63af197ba9c574eacb86ca6348
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Teleforter
   platform: 19
   scenePathNames:
   - Assets/Scenes/Menu.unity
-  - Assets/Scenes/isGame.unity
-  - Assets/Scenes/GameOver.unity
   - Assets/Scenes/Options.unity
-  playerPath: C:/Users/Gui/Desktop/Nova pasta/ExecutavelPacMan/GAME#02.exe
+  - Assets/Scenes/MenuDifficulty.unity
+  - Assets/Scenes/isGame#1.unity
+  - Assets/Scenes/isGame#2.unity
+  - Assets/Scenes/GameOver.unity
+  playerPath: D:/Games/ExecutavelPacMan/GAME#02.exe

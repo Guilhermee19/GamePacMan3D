@@ -12,7 +12,7 @@ public class killPlayer : MonoBehaviour
     //public string resetGame;
 
     void Start(){
-        heart = 50;
+        heart = 3;
     }
 
     void Update(){
